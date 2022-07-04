@@ -83,7 +83,7 @@ function peliculasAdolescentes(){
     let precio2 = 800;
     let precio3 = 1500;
     let precio4 = 1300;
-   (`Las peliculas mas vendidadas en la pagina categoria Menores:  \n1- ${pelicula1} Valor$: ${precio1} \n2- ${pelicula2} Valor$: ${precio2}  \n3- ${pelicula3} Valor$: ${precio3} \n4- ${pelicula4} Valor$: ${precio4} `);
+    alert(`Las peliculas mas vendidadas en la pagina categoria Adolescentes:  \n1- ${pelicula1} valor$: ${precio1} \n2- ${pelicula2} valor$: ${precio2} \n3- ${pelicula3} valor$: ${precio3} \n4- ${pelicula4} valor$: ${precio4} `);
 
 }
 
