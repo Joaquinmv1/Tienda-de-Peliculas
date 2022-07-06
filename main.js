@@ -134,6 +134,11 @@ while(menu !== "4"){
     } 
 }
 
+const titulo = document.getElementById("titulo");
+titulo.innerHTML = "Tienda de Peliculas";
+titulo.className = "tituloNombre"
+
+
 
 
 

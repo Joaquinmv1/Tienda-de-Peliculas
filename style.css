@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.tituloNombre{
+    color: white;
+    background-color: black;
+    padding: 20px;
+    font-size: 25px;
+}
