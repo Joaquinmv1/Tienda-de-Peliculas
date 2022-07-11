@@ -118,25 +118,42 @@ console.log(prox2);
 // const peliculasMayores = ["Soy leyenda ", "Hasta el ultimo hombre ", "Son como niños ", "En busca de la felicidad"];
 
 // // Invocacion de Funciones
-let nombre = bienvenida();
-let edad = validarEdad(nombre);
-accion();
+// let nombre = bienvenida();
+// let edad = validarEdad(nombre);
+// accion();
 
-while(menu !== "4"){
-    if(menu === "1"){
-        SeleccionPelicula();
-    } else if(menu === "2"){
-        peliculasAdolescentes()
-        accion()
-    } else if(menu === "3"){
-        peliculasMayores()
-        accion()
-    } 
-}
+// while(menu !== "4"){
+//     if(menu === "1"){
+//         SeleccionPelicula();
+//     } else if(menu === "2"){
+//         peliculasAdolescentes()
+//         accion()
+//     } else if(menu === "3"){
+//         peliculasMayores()
+//         accion()
+//     } 
+// }
 
 const titulo = document.getElementById("titulo");
 titulo.innerHTML = "Tienda de Peliculas";
-titulo.className = "tituloNombre"
+titulo.className = "tituloNombre";
+
+let email = document.getElementById("email");
+email.addEventListener("keydown", cantidadDisponible);
+
+function cantidadDisponible() {
+    cant_max = 25;
+    cant_disponible = cant_max - email.value.length;
+    let color = "text-black";
+
+    if (cant_disponible < 10) {
+        color = 'text-danger';
+    }
+
+    document.getElementById("emailError").innerHTML = `<span class='${color}'> Caracteres disponibles: ${cant_disponible}</span>`;
+}
+
+
 
 
 
