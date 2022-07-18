@@ -158,7 +158,13 @@ boton.onclick = () =>{
     let nombre = document.getElementById("nombre").value;
     let email = document.getElementById("email").value;
 
-    alert(`${nombre} Gracias por completar el Formulario! Se envio un email de confirmacion a ${email}`);
+    
+    if((nombre === "") || (nombre === null)){
+        alert("Ingrese los datos solicitados para continuar!")
+        return false;
+    } else{
+        alert(`${nombre} Gracias por completar el Formulario! Se envio un email de confirmacion a ${email}`);
+    }
 }
 
 
