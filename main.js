@@ -117,7 +117,7 @@ console.log(prox2);
 // const peliculasMenores = ["Harry potter ", "Los Increibles ", "Dragon Ball ", "Naruto "];
 // const peliculasMayores = ["Soy leyenda ", "Hasta el ultimo hombre ", "Son como niños ", "En busca de la felicidad"];
 
-// // Invocacion de Funciones
+// Invocacion de Funciones
 // let nombre = bienvenida();
 // let edad = validarEdad(nombre);
 // accion();
@@ -153,7 +153,13 @@ function cantidadDisponible() {
     document.getElementById("emailError").innerHTML = `<span class='${color}'> Caracteres disponibles: ${cant_disponible}</span>`;
 }
 
+let boton = document.getElementById("btnPrincipal");
+boton.onclick = () =>{
+    let nombre = document.getElementById("nombre").value;
+    let email = document.getElementById("email").value;
 
+    alert(`${nombre} Gracias por completar el Formulario! Se envio un email de confirmacion a ${email}`);
+}
 
 
 
